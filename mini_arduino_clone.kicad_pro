@@ -53,9 +53,19 @@
           "gap": 0.0,
           "via_gap": 0.0,
           "width": 0.0
+        },
+        {
+          "gap": 0.2,
+          "via_gap": 0.0,
+          "width": 0.3375
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "hole_clearance|72263107|56405487|c4974f3b-2569-435d-82d2-61901f7d2e80|406bbc6a-671a-4502-b213-36cd3c21d7bd",
+        "hole_clearance|72263107|59405487|137781fe-0b18-4e0b-9382-24a963e7a34f|e720efd0-b15c-42e1-9990-41aa68e80553",
+        "hole_clearance|72655724|55630655|c4974f3b-2569-435d-82d2-61901f7d2e80|2a3d657b-b38b-4356-99f0-222e444b85be",
+        "hole_clearance|72655724|60180319|137781fe-0b18-4e0b-9382-24a963e7a34f|3982bf92-8ae6-4d03-acc9-52f7fcf1fd65"
+      ],
       "meta": {
         "version": 2
       },
@@ -91,12 +101,12 @@
         "padstack": "warning",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_edge_clearance": "warning",
+        "silk_edge_clearance": "ignore",
         "silk_over_copper": "warning",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
-        "starved_thermal": "error",
+        "starved_thermal": "ignore",
         "text_height": "warning",
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
@@ -128,7 +138,7 @@
         "min_via_diameter": 0.5,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
-        "solder_mask_to_copper_clearance": 0.049999999999999996,
+        "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -172,7 +182,12 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.2,
+        0.25,
+        0.5,
+        1.0,
+        2.0
       ],
       "via_dimensions": [
         {
@@ -422,6 +437,23 @@
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.1778,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.246888,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "USB Data",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
         "via_diameter": 0.8,
         "via_drill": 0.4,
@@ -433,7 +465,12 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "USB Data",
+        "pattern": "/D_*"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
