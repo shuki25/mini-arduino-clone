@@ -633,10 +633,10 @@
           )
           (width 0) (fill yes))
       ) (tstamp 3982bf92-8ae6-4d03-acc9-52f7fcf1fd65))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_USB.3dshapes/USB_Micro-B_XKB_U254-051T-4BH83-F1S.wrl"
-      (offset (xyz 0 0 0))
+    (model "${KICAD_USER_DIR}/3dmodels/u254-051t-4bh83-f1s.stp"
+      (offset (xyz 0 -2.45 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz -90 0 0))
     )
   )
 
@@ -1194,10 +1194,10 @@
       (net 4 "+5V") (pinfunction "K") (pintype "passive") (tstamp 154385f0-693d-436b-89f4-0ded176f0db8))
     (pad "2" smd rect (at 1.02 0 180) (size 0.8 0.8) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 10 "/USB_UART/VBUS") (pinfunction "A") (pintype "passive") (tstamp d4353a84-db34-4898-bd6f-34ca4f73e64e))
-    (model "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_MicroSMP_AK.wrl"
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+    (model "${KICAD_USER_DIR}/3dmodels/MSS1P4-M3_89A.stp"
+      (offset (xyz 0.4 0.2 0.1))
+      (scale (xyz 1.1 1.1 1.1))
+      (rotate (xyz -90 0 0))
     )
   )
 
@@ -2293,6 +2293,24 @@
 
   (gr_rect locked (start 68.398107 48.888487) (end 113.483107 66.922487)
     (stroke (width 0.1) (type default)) (fill none) (layer "Edge.Cuts") (tstamp 8aa78e33-edd0-4e75-80de-e6b0a7548a66))
+  (dimension (type aligned) (layer "Cmts.User") (tstamp 5f2c9714-1696-4907-aa5e-fcbbfd8c3c5e)
+    (pts (xy 113.483107 48.888487) (xy 68.398107 48.888487))
+    (height 2.578486)
+    (gr_text "45.0850 mm" (at 90.940607 45.160001) (layer "Cmts.User") (tstamp 5991b118-438d-4ed4-85c2-e69647641c64)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (format (prefix "") (suffix "") (units 3) (units_format 1) (precision 4))
+    (style (thickness 0.15) (arrow_length 1.27) (text_position_mode 0) (extension_height 0.58642) (extension_offset 0.5) keep_text_aligned)
+  )
+  (dimension (type aligned) (layer "Cmts.User") (tstamp bbeb88bb-4914-4f33-9be4-7bbe1b9f0b39)
+    (pts (xy 113.483107 48.888487) (xy 113.483107 66.922487))
+    (height -3.876893)
+    (gr_text "18.0340 mm" (at 116.21 57.905487 90) (layer "Cmts.User") (tstamp 571fc2df-5456-45f2-b354-b60384d4660e)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (format (prefix "") (suffix "") (units 3) (units_format 1) (precision 4))
+    (style (thickness 0.15) (arrow_length 1.27) (text_position_mode 0) (extension_height 0.58642) (extension_offset 0.5) keep_text_aligned)
+  )
 
   (segment (start 92.445208 53.147592) (end 92.445208 53.345485) (width 0.2) (layer "F.Cu") (net 1) (tstamp 930824e0-e493-4819-a5e5-605579b90f68))
   (segment (start 92.445208 53.345485) (end 93.717163 54.61744) (width 0.2) (layer "F.Cu") (net 1) (tstamp c8ab6c76-6845-4694-a48a-f87c18c348c1))
